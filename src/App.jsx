@@ -1,6 +1,8 @@
 import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 import FeaturedProject from "./components/FeaturedProject";
+import Stack from "./sections/Stack";
+import Experiance from "./sections/Experiance";
 
 const App = () => {
   return (
@@ -11,6 +13,9 @@ const App = () => {
         <div className="flex flex-col w-full">
           <Hero />
           <FeaturedProject />
+          <Experiance />
+
+          {/* <Stack /> */}
           <Footer />
         </div>
       </div>
