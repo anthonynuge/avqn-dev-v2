@@ -8,8 +8,8 @@ const FeaturedProject = () => {
     .slice(0, 2);
 
   return (
-    <div className="space-y-5">
-      <h3 className="text-text-hl font-medium">Featured Projects</h3>
+    <div className="my-2">
+      <h3 className="text-text-hl font-medium my-2">Featured Projects</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {featuredProjects.map((project, index) => (
           <ProjectCard
