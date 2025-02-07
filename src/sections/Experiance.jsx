@@ -13,7 +13,7 @@ const Experiance = () => {
               </p>
             </div>
             <div className="lg:w-3/6">
-              <h4 className="text-text-hl">
+              <h4 className="">
                 {experience.role} -<span> {experience.company} </span>
               </h4>
               <div className="text-sm">{experience.description}</div>

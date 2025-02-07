@@ -9,7 +9,7 @@ const FeaturedProject = () => {
 
   return (
     <div className="my-2">
-      <h3 className="text-text-hl font-medium my-2">Featured Projects</h3>
+      <h3 className=" font-medium my-2">Featured Projects</h3>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {featuredProjects.map((project, index) => (
           <ProjectCard
