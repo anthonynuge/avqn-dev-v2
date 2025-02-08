@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import {
   Home,
@@ -39,22 +40,22 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
   const navItems = [
     {
       title: "Home",
-      url: "#",
+      url: "/",
       icon: Home,
     },
     {
       title: "Experiance",
-      url: "#",
+      url: "experiance",
       icon: BriefcaseBusiness,
     },
     {
       title: "Projects",
-      url: "#",
+      url: "projects",
       icon: Hammer,
     },
     {
       title: "About",
-      url: "#",
+      url: "about",
       icon: UserRound,
     },
     {
@@ -95,10 +96,10 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
                     asChild
                     className="hover:bg-accent-foreground/10"
                   >
-                    <a href={item.url}>
+                    <Link to={item.url}>
                       <item.icon />
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}

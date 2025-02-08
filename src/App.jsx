@@ -1,12 +1,18 @@
 import { useState, useEffect } from "react";
 
-import Hero from "./components/Hero";
+// import Hero from "./components/Hero";
 import Footer from "./components/Footer";
-import FeaturedProject from "./components/FeaturedProject";
-import Experiance from "./sections/Experiance";
+// import FeaturedProject from "./components/FeaturedProject";
+// import Experiance from "./sections/Experiance";
 
 import { SidebarProvider, SidebarTrigger } from "./components/ui/sidebar";
 import { AppSidebar } from "./components/AppSideBar";
+import { Routes, Route } from "react-router-dom";
+
+import Home from "@/pages/Home";
+import Experiance from "@/pages/Experiance";
+import Projects from "@/pages/Projects";
+import About from "@/pages/About";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(
@@ -39,13 +45,13 @@ const App = () => {
 
         <div className="container mx-auto px-5 max-w-[1000px]">
           <div className="flex flex-col w-full">
-            {/* <button onClick={toggleTheme}>
-              {isDarkMode ? "Switch To Light Mode" : "Switch to Dark Mode"}
-            </button> */}
-            <Hero />
-            <FeaturedProject />
-            <Experiance />
-            {/* <Stack /> */}
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/experiance" element={<Experiance />} />
+            </Routes>
+
             <Footer />
           </div>
         </div>
