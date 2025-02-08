@@ -24,8 +24,6 @@ import {
   SidebarFooter,
 } from "@/components/ui/sidebar";
 
-import { Button } from "@/components/ui/button";
-
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export function AppSidebar({ toggleTheme, isDarkMode }) {
