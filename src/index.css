@@ -144,6 +144,17 @@
 }
 
 @layer components {
+  .socialIconLink {
+    @apply text-primary/60
+    dark:text-primary/60 
+    hover:text-primary
+    dark:hover:text-primary
+    hover:scale-120
+
+    transition
+    duration-300
+    ease-in-out;
+  }
 }
 
 @layer utilities {

@@ -15,7 +15,7 @@ import Projects from "@/pages/Projects";
 import About from "@/pages/About";
 
 import { Boxes } from "@/components/ui/background-boxes";
-import HeaderFlip from "./components/HeaderFlip";
+// import HeaderFlip from "./components/HeaderFlip";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(
@@ -38,23 +38,17 @@ const App = () => {
   };
 
   return (
-    <div className="overflow-x-hidden antialiased">
-      <div className="top-0 -z-10 h-full w-full"></div>
-      <div className="absolute top-0 z-[-2] h-screen w-screen">
-        {/* <Boxes /> */}
-      </div>
-
+    <div className="overflow-x-hidden antialiased relative">
       {/* Grid Background (Boxes) - Positioned Behind Everything Else */}
-      {/* <div className="absolute inset-0 pointer-events-auto z-[-3]">
+      <div className="absolute h-full pointer-events-auto opacity-20">
         <Boxes />
-      </div> */}
+      </div>
 
       <SidebarProvider>
         <AppSidebar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
-        <SidebarTrigger />
-
+        <SidebarTrigger className="z-30" />
         <div className="container mx-auto px-5 max-w-[1000px]">
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full h-full">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />

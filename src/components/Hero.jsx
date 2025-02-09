@@ -17,7 +17,9 @@ const Hero = () => {
         integrations, or tackling algorithms, I thrive on challenges and
         learning.
       </p>
-      <Socials />
+      <div className="">
+        <Socials />
+      </div>
     </div>
   );
 };
