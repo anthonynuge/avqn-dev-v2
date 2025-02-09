@@ -14,6 +14,9 @@ import Experiance from "@/pages/Experiance";
 import Projects from "@/pages/Projects";
 import About from "@/pages/About";
 
+import { Boxes } from "@/components/ui/background-boxes";
+import HeaderFlip from "./components/HeaderFlip";
+
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(
     localStorage.getItem("theme") === "dark"
@@ -37,7 +40,14 @@ const App = () => {
   return (
     <div className="overflow-x-hidden antialiased">
       <div className="top-0 -z-10 h-full w-full"></div>
-      <div className="absolute top-0 z-[-2] h-screen w-screen"></div>
+      <div className="absolute top-0 z-[-2] h-screen w-screen">
+        {/* <Boxes /> */}
+      </div>
+
+      {/* Grid Background (Boxes) - Positioned Behind Everything Else */}
+      {/* <div className="absolute inset-0 pointer-events-auto z-[-3]">
+        <Boxes />
+      </div> */}
 
       <SidebarProvider>
         <AppSidebar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
@@ -50,8 +60,8 @@ const App = () => {
               <Route path="/projects" element={<Projects />} />
               <Route path="/about" element={<About />} />
               <Route path="/experiance" element={<Experiance />} />
+              {/* <Route path="/scratch" element={<HeaderFlip />} /> */}
             </Routes>
-
             <Footer />
           </div>
         </div>

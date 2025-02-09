@@ -1,7 +1,23 @@
-import React from "react";
+"use client";
+import { Boxes } from "@/components/ui/background-boxes";
+import { cn } from "@/lib/utils";
 
 const Experiance = () => {
-  return <div>Experiance</div>;
+  return (
+    // <div className="h-96 relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center rounded-lg">
+    //   <div className="absolute inset-0 w-full h-full bg-slate-900 z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
+
+    <div className="h-[1000px] relative w-full overflow-hidden flex flex-col items-center justify-center rounded-lg">
+      {/* <div className="absolute inset-0 w-full h-full z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" /> */}
+      <Boxes />
+      {/* <h1 className={cn("md:text-4xl text-xl relative z-80")}>
+        Tailwind is Awesome
+      </h1>
+      <p className="text-center mt-2 relative z-80">
+        Framer motion is the best animation library ngl
+      </p> */}
+    </div>
+  );
 };
 
 export default Experiance;

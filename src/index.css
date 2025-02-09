@@ -128,7 +128,9 @@
     @apply dark:bg-neutral-900
     bg-neutral-50
     text-neutral-800
-    dark:text-neutral-500;
+    dark:text-neutral-500
+    border-border 
+    outline-ring/50;
   }
 
   h1,
@@ -140,23 +142,9 @@
     text-neutral-950;
   }
 }
-/* @layer base {
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    @apply dark:text-neutral-50
-    text-neutral-950;
-  }
-} */
+@layer components {
+}
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+@layer utilities {
 }
