@@ -40,7 +40,7 @@ const App = () => {
   return (
     <div className="overflow-x-hidden antialiased relative">
       {/* Grid Background (Boxes) - Positioned Behind Everything Else */}
-      <div className="absolute h-full pointer-events-auto opacity-20">
+      <div className="absolute h-full pointer-events-auto opacity-25">
         <Boxes />
       </div>
 

@@ -13,6 +13,11 @@ import {
   Download,
 } from "lucide-react";
 
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+
 import {
   Sidebar,
   SidebarContent,
@@ -67,6 +72,29 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
       title: "Search",
       url: "#",
       icon: Search,
+    },
+  ];
+
+  const contactItems = [
+    {
+      title: "Github",
+      url: "https://github.com/anthonynuge",
+      icon: FaGithub,
+    },
+    {
+      title: "Linkedin",
+      url: "https://www.linkedin.com/in/anthony-nguyen-02861b331/",
+      icon: FaLinkedin,
+    },
+    {
+      title: "Facebook",
+      url: "https://www.facebook.com/anthony.nguyen.984786",
+      icon: FaFacebook,
+    },
+    {
+      title: "Instagram",
+      url: "https://www.instagram.com/anthrnee/",
+      icon: FaInstagram,
     },
   ];
 
@@ -130,8 +158,33 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarGroup>
-      </SidebarContent>
 
+        {/* Contanct me */}
+        <SidebarGroup>
+          <SidebarGroupLabel>Say hi</SidebarGroupLabel>
+          <SidebarContent>
+            <SidebarMenu>
+              {contactItems.map((item) => (
+                <SidebarMenuItem key={item.title}>
+                  <SidebarMenuButton
+                    asChild
+                    className="hover:bg-accent-foreground/10"
+                  >
+                    <a
+                      href={item.url}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <item.icon />
+                      <span>{item.title}</span>
+                    </a>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu>
+          </SidebarContent>
+        </SidebarGroup>
+      </SidebarContent>
       <SidebarFooter>
         <SidebarMenuButton asChild className="hover:bg-accent-foreground/10">
           <a href="#">
