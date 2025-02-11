@@ -4,12 +4,11 @@ export const projects = [
     description:
       "Built in Java, this maze solver app was created to help vizualize different pathfining algorithms",
     image: "/covers/maze.webp",
-    // gif: "/gifs/demo.webp",
-    gif: "../assets/demos/demo.gif",
-    link: "https://myportfolio.com",
+    gif: "demos/spedMaze.mp4",
+    link: "",
     tags: ["Java", "JavaSwing", "JavaFX"],
-    git: "github.com",
-    featured: true,
+    git: "https://github.com/anthonynuge/pathfinding_visualization",
+    featured: false,
   },
   {
     title: "Portfolio Website",
@@ -17,18 +16,18 @@ export const projects = [
       "A sleek personal portfolio showcasing my work and skills. Hire me!",
     image: "/covers/maze.webp",
     gif: "/gifs/portfolio.webp",
-    link: "https://myportfolio.com",
+    link: "",
     tags: ["React", "Next.js", "TypeScript", "Javascript", "CSS", "HTML"],
-    git: "github.com",
-    featured: true,
+    git: "https://github.com/anthonynuge/avqn-dev-v2",
+    featured: false,
   },
   {
     title: "Fruit Vision",
     description:
       "Neural net trained to identify different fruits from images. For the times that your unsure if that is a apple or kiwi.",
     image: "/images/portfolio.png", // Replace with the correct image path
-    gif: "/gifs/fruitclassifier.gif",
-    link: "https://myportfolio.com",
+    gif: "/demos/fruitVision.mp4",
+    link: "",
     tags: [
       "Python",
       "TensorFlow",
@@ -37,27 +36,27 @@ export const projects = [
       "Matplotlib",
       "Numpy",
     ],
-    git: "",
-    featured: false,
+    git: "https://github.com/anthonynuge/Fruit-Identification-CNN",
+    featured: true,
   },
   {
     title: "Fake News Or Nah",
     description:
       "LLM trained to analyze text and determine whether it is fake or real news.",
     image: "/images/portfolio.png", // Replace with the correct image path
-    gif: "/gifs/fakenews.webp",
+    gif: "/demos/fakeNewsDemo.mp4",
     link: "https://myportfolio.com",
     tags: ["Python", "Tkinter", "Scikit-Learn", "Matplotlib", "Numpy"],
-    git: "",
-    featured: false,
+    git: "https://github.com/anthonynuge/fake-news-detection-app",
+    featured: true,
   },
   {
     title: "E-commerce Store",
     description:
       "A modern e-commerce platform with secure payment integration. Proof of concept project.",
     image: "/images/ecommerce.png",
-    gif: "/gifs/ecommerce.webp",
-    link: "https://mystore.com",
+    gif: "demos/inventory30fps.mp4",
+    link: "",
     tags: [
       "React",
       "Next.js",
@@ -70,7 +69,26 @@ export const projects = [
       "CSS",
       "HTML",
     ],
-    git: "",
+    git: "https://github.com/anthonynuge/inventory-management",
+    featured: false,
+  },
+  {
+    title: "Susan AI",
+    description:
+      "Your new AI companion utilizing gemini. Sign up to make calls.",
+    image: "/images/ecommerce.png",
+    gif: "demos/inventory30fps.mp4",
+    link: "",
+    tags: [
+      "React",
+      "Appwrite",
+      "Javascript",
+      "Motion",
+      "Tailwind",
+      "CSS",
+      "HTML",
+    ],
+    git: "https://github.com/anthonynuge/susan-ai",
     featured: false,
   },
   {

@@ -17,6 +17,7 @@ const FeaturedProject = () => {
             description={project.description}
             link={project.link}
             tags={project.tags}
+            gif={project.gif}
           />
         ))}
       </div>
