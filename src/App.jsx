@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 
-// import Hero from "./components/Hero";
 import Footer from "./components/Footer";
-// import FeaturedProject from "./components/FeaturedProject";
-// import Experiance from "./sections/Experiance";
 
 import { SidebarProvider, SidebarTrigger } from "./components/ui/sidebar";
 import { AppSidebar } from "./components/AppSideBar";
@@ -13,9 +10,9 @@ import Home from "@/pages/Home";
 import Experiance from "@/pages/Experiance";
 import Projects from "@/pages/Projects";
 import About from "@/pages/About";
+import Skills from "@/pages/Skills";
 
 import { Boxes } from "@/components/ui/background-boxes";
-// import HeaderFlip from "./components/HeaderFlip";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(
@@ -54,6 +51,7 @@ const App = () => {
               <Route path="/projects" element={<Projects />} />
               <Route path="/about" element={<About />} />
               <Route path="/experiance" element={<Experiance />} />
+              <Route path="/skills" element={<Skills />} />
               {/* <Route path="/scratch" element={<HeaderFlip />} /> */}
             </Routes>
             <Footer />

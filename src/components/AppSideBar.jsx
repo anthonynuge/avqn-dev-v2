@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import {
   Home,
-  Inbox,
+  BookOpenText,
   Search,
   BriefcaseBusiness,
   UserRound,
@@ -64,9 +64,9 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
       icon: UserRound,
     },
     {
-      title: "Inbox",
-      url: "#",
-      icon: Inbox,
+      title: "Skills",
+      url: "skills",
+      icon: BookOpenText,
     },
     {
       title: "Search",
