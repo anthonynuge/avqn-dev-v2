@@ -45,7 +45,7 @@ const App = () => {
         <AppSidebar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
         <SidebarTrigger className="z-30" />
         <div className="container mx-auto px-5 max-w-[1000px]">
-          <div className="flex flex-col w-full h-full">
+          <div className="flex flex-col h-full">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/projects" element={<Projects />} />

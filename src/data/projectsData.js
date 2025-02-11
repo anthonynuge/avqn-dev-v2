@@ -24,7 +24,7 @@ export const projects = [
   {
     title: "Fruit Vision",
     description:
-      "Neural net trained to identify different fruits from images. For the times that your unsure if that is a apple or kiwi.",
+      "Is that a kiwi or apple? Neural net trained to identify different fruits from images.",
     image: "/images/portfolio.png", // Replace with the correct image path
     gif: "/demos/fruitVision.mp4",
     link: "",

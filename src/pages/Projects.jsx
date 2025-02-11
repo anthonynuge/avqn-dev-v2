@@ -12,9 +12,10 @@ const Projects = () => {
           </HeaderFlip>
         </div>
       </div>
+
       <div>
         <div className="mt-8 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 overflow-y-auto absolute">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 overflow-visible absolute">
             {projects.map((project, index) => (
               <ProjectCard
                 key={index}

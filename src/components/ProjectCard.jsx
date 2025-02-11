@@ -1,6 +1,6 @@
 const ProjectCard = ({ title, description, tags, link, gif }) => {
   return (
-    <a href={link} className="z-50 overflow-hidden">
+    <a href={link} className="projectCard z-50 overflow-visible">
       <div className="rounded-lg overflow-hidden shadow dark:bg-card-bg bg-gray-200 border-1 border-neutral-800/30">
         <div className="w-full aspect-video flex items-center justify-center">
           {/* <img src={demo} alt="projectgif" className="object-cover" /> */}
@@ -10,6 +10,7 @@ const ProjectCard = ({ title, description, tags, link, gif }) => {
             autoPlay={true}
             muted={true}
             loop={true}
+            className="video"
           ></video>
         </div>
         {/* description portion */}
