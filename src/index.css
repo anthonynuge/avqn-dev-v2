@@ -110,6 +110,15 @@
     @apply transition-all duration-400 ease-in-out;
   }
 
+  .scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
   a,
   img,
   button {
@@ -160,8 +169,8 @@
     @apply transition-all 
     duration-300 
     hover:-translate-y-2 
-    hover:-translate-z-1000
-    hover:scale-105
+    hover:-translate-z-1
+    hover:scale-102
     hover:shadow-lg;
   }
 

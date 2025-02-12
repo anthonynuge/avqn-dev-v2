@@ -4,7 +4,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 const Projects = () => {
   return (
-    <div className="">
+    <>
       <div className="space-y-3 mt-24">
         <div className="w-min">
           <HeaderFlip className="text-2xl md:text-4xl lg:text-5xl text-primary dark:text-primary">
@@ -13,9 +13,9 @@ const Projects = () => {
         </div>
       </div>
 
-      <div>
-        <div className="mt-8 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 overflow-visible absolute">
+      <div className="flex-1 overflow-y-auto scroll-container mt-4 relative">
+        <div className="mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 overflow-visible absolute">
             {projects.map((project, index) => (
               <ProjectCard
                 key={index}
@@ -24,12 +24,14 @@ const Projects = () => {
                 link={project.link}
                 tags={project.tags}
                 gif={project.gif}
+                className="relative z-10"
               />
             ))}
           </div>
         </div>
       </div>
-    </div>
+      {/* // </div> */}
+    </>
   );
 };
 

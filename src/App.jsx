@@ -37,26 +37,26 @@ const App = () => {
   return (
     <div className="overflow-x-hidden antialiased relative">
       {/* Grid Background (Boxes) - Positioned Behind Everything Else */}
-      <div className="absolute h-full pointer-events-auto opacity-25">
+      <div className="fixed h-full pointer-events-auto opacity-25">
         <Boxes />
       </div>
 
       <SidebarProvider>
         <AppSidebar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
         <SidebarTrigger className="z-30" />
-        <div className="container mx-auto px-5 max-w-[1000px]">
-          <div className="flex flex-col h-full">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/experiance" element={<Experiance />} />
-              <Route path="/skills" element={<Skills />} />
-              {/* <Route path="/scratch" element={<HeaderFlip />} /> */}
-            </Routes>
-            <Footer />
-          </div>
+        <div className="container mx-auto px-5 max-w-[1000px] flex flex-col">
+          {/* <div className="flex flex-col h-full"> */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experiance" element={<Experiance />} />
+            <Route path="/skills" element={<Skills />} />
+            {/* <Route path="/scratch" element={<HeaderFlip />} /> */}
+          </Routes>
+          <Footer />
         </div>
+        {/* </div> */}
       </SidebarProvider>
     </div>
   );
