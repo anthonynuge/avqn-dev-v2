@@ -19,6 +19,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <ProjectCard
                 key={index}
+                id={project.id}
                 title={project.title}
                 description={project.description}
                 link={project.link}
@@ -30,7 +31,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      {/* // </div> */}
     </>
   );
 };

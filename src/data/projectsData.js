@@ -5,7 +5,7 @@ export const projects = [
     description:
       "Built in Java, this maze solver app was created to help vizualize different pathfining algorithms",
     image: "/covers/maze.webp",
-    gif: "demos/spedMaze.mp4",
+    gif: "/demos/spedMaze.mp4",
     link: "",
     tags: ["Java", "JavaSwing", "JavaFX"],
     git: "https://github.com/anthonynuge/pathfinding_visualization",
@@ -60,7 +60,7 @@ export const projects = [
     description:
       "A modern e-commerce platform with secure payment integration. Proof of concept project.",
     image: "/images/ecommerce.png",
-    gif: "demos/inventory30fps.mp4",
+    gif: "/demos/inventory30fps.mp4",
     link: "",
     tags: [
       "React",

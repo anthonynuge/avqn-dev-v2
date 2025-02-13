@@ -13,6 +13,7 @@ import About from "@/pages/About";
 import Skills from "@/pages/Skills";
 
 import { Boxes } from "@/components/ui/background-boxes";
+import ProjectPage from "./pages/ProjectPage";
 
 const App = () => {
   const [isDarkMode, setIsDarkMode] = useState(
@@ -52,6 +53,7 @@ const App = () => {
             <Route path="/about" element={<About />} />
             <Route path="/experiance" element={<Experiance />} />
             <Route path="/skills" element={<Skills />} />
+            <Route path="/projects/:projectId" element={<ProjectPage />} />
             {/* <Route path="/scratch" element={<HeaderFlip />} /> */}
           </Routes>
           <Footer />

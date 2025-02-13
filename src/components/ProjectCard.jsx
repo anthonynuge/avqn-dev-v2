@@ -1,14 +1,23 @@
-const ProjectCard = ({ title, description, tags, link, gif, className }) => {
+import { Link } from "react-router-dom";
+
+const ProjectCard = ({
+  id,
+  title,
+  description,
+  tags,
+  link,
+  gif,
+  className,
+}) => {
   return (
-    <a
-      href={link}
+    <Link
+      to={`/projects/${id}`}
       className="projectCard z-50 overflow-visible lg:max-w-[450px]"
     >
       <div
         className={`rounded-lg overflow-hidden shadow dark:bg-card-bg bg-gray-200 border-1 border-neutral-800/30 dark:border-neutral-200/20 ${className}`}
       >
         <div className="w-full aspect-video flex items-center justify-center">
-          {/* <img src={demo} alt="projectgif" className="object-cover" /> */}
           <video
             src={gif}
             type="video/mp4"
@@ -26,7 +35,7 @@ const ProjectCard = ({ title, description, tags, link, gif, className }) => {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 
