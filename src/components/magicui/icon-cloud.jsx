@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import { renderToString } from "react-dom/server";
 
@@ -6,10 +6,7 @@ function easeOutCubic(t) {
   return 1 - Math.pow(1 - t, 3);
 }
 
-export function IconCloud({
-  icons,
-  images
-}) {
+export function IconCloud({ icons, images }) {
   const canvasRef = useRef(null);
   const [iconPositions, setIconPositions] = useState([]);
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
@@ -134,12 +131,17 @@ export function IconCloud({
       const dy = y - screenY;
 
       if (dx * dx + dy * dy < radius * radius) {
-        const targetX = -Math.atan2(icon.y, Math.sqrt(icon.x * icon.x + icon.z * icon.z));
+        const targetX = -Math.atan2(
+          icon.y,
+          Math.sqrt(icon.x * icon.x + icon.z * icon.z)
+        );
         const targetY = Math.atan2(icon.x, icon.z);
 
         const currentX = rotationRef.current.x;
         const currentY = rotationRef.current.y;
-        const distance = Math.sqrt(Math.pow(targetX - currentX, 2) + Math.pow(targetY - currentY, 2));
+        const distance = Math.sqrt(
+          Math.pow(targetX - currentX, 2) + Math.pow(targetY - currentY, 2)
+        );
 
         const duration = Math.min(2000, Math.max(800, distance * 1000));
 
@@ -240,7 +242,10 @@ export function IconCloud({
         const opacity = Math.max(0.2, Math.min(1, (rotatedZ + 150) / 200));
 
         ctx.save();
-        ctx.translate(canvas.width / 2 + rotatedX, canvas.height / 2 + rotatedY);
+        ctx.translate(
+          canvas.width / 2 + rotatedX,
+          canvas.height / 2 + rotatedY
+        );
         ctx.scale(scale, scale);
         ctx.globalAlpha = opacity;
 
@@ -280,7 +285,7 @@ export function IconCloud({
   }, [icons, images, iconPositions, isDragging, mousePos, targetRotation]);
 
   return (
-    (<canvas
+    <canvas
       ref={canvasRef}
       width={400}
       height={400}
@@ -290,6 +295,7 @@ export function IconCloud({
       onMouseLeave={handleMouseUp}
       className="rounded-lg"
       aria-label="Interactive 3D Icon Cloud"
-      role="img" />)
+      role="img"
+    />
   );
 }

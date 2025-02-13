@@ -28,14 +28,11 @@ const About = () => {
             <HeaderFlip className="text-md md:text-xl lg:text-3xl text-primary dark:text-primary">
               Developer,
             </HeaderFlip>
-            <HeaderFlip className="text-md md:text-xl lg:text-3xl text-primary dark:text-primary">
-              Graduate
-            </HeaderFlip>
           </div>
 
           <p>
-            I'm Anthony, a software developer based in Houston, Texas, with a
-            background in technology and healthcare.
+            I&apos;m Anthony, a software developer based in Houston, Texas, with
+            a background in technology and healthcare.
           </p>
           <p>
             In the past year I have had the opportunity to develope software in

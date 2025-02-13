@@ -13,7 +13,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="flex-1 overflow-y-auto scroll-container mt-4 relative">
+      <div className="flex-1 overflow-y-auto scroll-container mt-4 relative pl-1">
         <div className="mt-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 overflow-visible absolute">
             {projects.map((project, index) => (
