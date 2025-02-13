@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: "mazeSolver",
     title: "Maze Solver",
     description:
       "Built in Java, this maze solver app was created to help vizualize different pathfining algorithms",
@@ -11,6 +12,7 @@ export const projects = [
     featured: false,
   },
   {
+    id: "portfolioWebsite",
     title: "Portfolio Website",
     description:
       "A sleek personal portfolio showcasing my work and skills. Hire me!",
@@ -22,6 +24,7 @@ export const projects = [
     featured: false,
   },
   {
+    id: "fruitVision",
     title: "Fruit Vision",
     description:
       "Is that a kiwi or apple? Neural net trained to identify different fruits from images.",
@@ -40,6 +43,7 @@ export const projects = [
     featured: true,
   },
   {
+    id: "fakeNewsOrNah",
     title: "Fake News Or Nah",
     description:
       "LLM trained to analyze text and determine whether it is fake or real news.",
@@ -51,6 +55,7 @@ export const projects = [
     featured: true,
   },
   {
+    id: "e-commerceStore",
     title: "E-commerce Store",
     description:
       "A modern e-commerce platform with secure payment integration. Proof of concept project.",
@@ -73,6 +78,7 @@ export const projects = [
     featured: false,
   },
   {
+    id: "susanAI",
     title: "Susan AI",
     description:
       "Your new AI companion utilizing gemini. Sign up to make calls.",
@@ -92,6 +98,7 @@ export const projects = [
     featured: false,
   },
   {
+    id: "weatherApp",
     title: "Weather App",
     description: "A weather application using OpenWeatherMap API.",
     image: "/images/weather.png",
