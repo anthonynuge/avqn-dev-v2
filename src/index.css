@@ -185,6 +185,18 @@
   .video:hover {
     filter: brightness(100%);
   }
+
+
+  .dark .outlinkBtn {
+    @apply bg-[#292929]/40
+    hover:bg-[#292929]/70
+    text-neutral-300;
+  }
+
+  .projectItem {
+    @apply text-xs
+    dark:text-white;
+  }
 }
 
 @layer utilities {
