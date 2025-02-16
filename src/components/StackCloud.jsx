@@ -1,6 +1,7 @@
 "use client";
 import { IconCloud } from "./magicui/icon-cloud";
 import { useState, useEffect } from "react";
+import techIcons from "@/data/skillsList";
 
 const slugs = [
   "typescript",
@@ -43,6 +44,7 @@ const StackCloud = () => {
     (slug) => `https://cdn.simpleicons.org/${slug}/${color}`
   );
 
+  console.log(images)
   return (
     <div className="relative flex size-fit max-w-lg items-center justify-center overflow-hidden rounded-lg">
       <IconCloud images={images} />

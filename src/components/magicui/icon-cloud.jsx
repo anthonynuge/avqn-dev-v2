@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { renderToString } from "react-dom/server";
 
 function easeOutCubic(t) {
@@ -90,9 +90,9 @@ export function IconCloud({ icons, images }) {
       const z = Math.sin(phi) * r;
 
       newIcons.push({
-        x: x * 100,
-        y: y * 100,
-        z: z * 100,
+        x: x * 200,
+        y: y * 200,
+        z: z * 200,
         scale: 1,
         opacity: 1,
         id: i,
@@ -287,8 +287,8 @@ export function IconCloud({ icons, images }) {
   return (
     <canvas
       ref={canvasRef}
-      width={400}
-      height={400}
+      width={550}
+      height={550}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
