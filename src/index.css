@@ -103,11 +103,11 @@
 
 @layer base {
   html {
-    @apply transition-colors duration-400;
+    @apply transition-colors duration-500;
   }
 
   .theme-transition * {
-    @apply transition-all duration-400 ease-in-out;
+    @apply transition-all duration-500 ease-in-out;
   }
 
   .scroll-container::-webkit-scrollbar {

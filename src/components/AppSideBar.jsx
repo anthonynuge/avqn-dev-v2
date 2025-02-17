@@ -35,12 +35,15 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 export function AppSidebar({ toggleTheme, isDarkMode }) {
   const [rotated, setRotated] = useState(false);
 
-  // Menu items.
+  const handleThemeToggle = () => {
+    if (rotated) return;
+    setRotated(true);
+    toggleTheme();
 
-  useEffect(() => {
-    setRotated(true); // Trigger animation when theme changes
-    setTimeout(() => setRotated(false), 400); // Reset after animation duration
-  }, [isDarkMode]);
+    setTimeout(() => {
+      setRotated(false); // Reset rotation state after animation completes
+    }, 500);
+  };
 
   const navItems = [
     {
@@ -140,13 +143,12 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
           <SidebarGroupLabel>Settings</SidebarGroupLabel>
           <SidebarMenuItem>
             <SidebarMenuButton
-              onClick={toggleTheme}
+              onClick={handleThemeToggle}
               className="hover:bg-accent-foreground/10"
             >
               <span
-                className={`transition-transform duration-500 ease-in-out ${
-                  rotated ? "rotate-180" : "rotate-0"
-                }`}
+                className={`transition-transform duration-500 ease-in-out ${rotated ? "rotate-180" : "rotate-0"
+                  }`}
               >
                 {isDarkMode ? (
                   <Sun className="size-[16px]" />

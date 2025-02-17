@@ -2,8 +2,8 @@ import HeaderFlip from "@/components/HeaderFlip";
 
 const About = () => {
   return (
-    // <div className="flex justify-center items-center min-h-screen bg-gray-300">
-    <div className=" grow">
+    <div
+      className="grow">
       {/* // Header */}
       <div className="space-y-3 mt-24">
         <div className="w-min">
@@ -41,15 +41,6 @@ const About = () => {
             cross-functional teams at a startup.
           </p>
         </div>
-        {/* avatar */}
-        {/* <div className="relative rounded-full overflow-hidden mx-auto">
-          <img
-            src="https://github.com/anthonynuge.png"
-            alt=""
-            height={250}
-            width={250}
-          />
-        </div> */}
       </div>
     </div>
   );
