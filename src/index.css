@@ -197,6 +197,24 @@
     @apply text-xs
     dark:text-white;
   }
+
+  .searchInput {
+    @apply 
+    pl-10
+    pr-4
+    py-2
+    my-2
+    rounded-lg
+    outline-none
+    focus:ring
+    transition-all
+    bg-accent
+    text-accent-foreground
+    hover:bg-accent/90
+
+    ring-neutral-600/80
+    dark:ring-neutral-700/80
+  }
 }
 
 @layer utilities {

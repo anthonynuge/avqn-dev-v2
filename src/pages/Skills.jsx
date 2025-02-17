@@ -5,7 +5,8 @@ import { IconCloud } from "@/components/magicui/icon-cloud";
 
 import skillsList from "@/data/skillsList";
 import { motion, AnimatePresence, useAnimationControls } from "framer-motion"
-import { skillItem, slideOutExit } from "@/animations/motionVariants";
+import { funMessage, skillItem, slideOutExit } from "@/animations/motionVariants";
+import { Search } from "lucide-react";
 
 const useDebounce = (value, delay) => {
   const [debouncedValue, setDebouncedValue] = useState(value);
@@ -79,77 +80,92 @@ const Skills = () => {
   }, [debouncedQuery]);
 
   return (
-    <div className=" grow">
-      {/* // Header */}
-      <div className="space-y-3 mt-24">
-        <div className="w-min">
-          <HeaderFlip className="text-2xl md:text-4xl lg:text-5xl text-primary dark:text-primary">
-            Skills
-          </HeaderFlip>
-        </div>
-      </div>
-
-      <div className="flex flex-col w-[50%] relative mr-auto">
-        {/* search input */}
-        <input
-          type="text"
-          placeholder="Search for technologies..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          className="bg-neutral-700/50 p-2 my-4"
-        />
-
-        <div className="scroll-container flex flex-col gap-3 overflow-y-auto">
-          {filteredSkills.length === 0 ? (
-            <div className="grow h-full">
-              <p>I have not worked with that before.</p>
-              <h3 className="text-xl my-auto font-bold">But I am a fast learner!</h3>
-            </div>
-
-          ) : (
-            <AnimatePresence>
-              {groupedSkills.map(([category, skills]) => (
-                <motion.div
-                  key={category}
-                  variants={slideOutExit}
-                  initial="hidden"
-                  animate="visible"
-                  exit="exit"
-                  layout="position"
-                  className="border rounded-lg overflow-hidden"
-                >
-                  <h2 className="p-2 bg-neutral-700/30">{category}</h2>
-                  <div className="grid grid-cols-3 p-2 gap-2">
-                    <AnimatePresence>
-                      {skills.map(skill => (
-                        <motion.div
-                          key={skill.id}
-                          variants={skillItem}
-                          initial="hidden"
-                          animate="visible"
-                          exit="exit"
-                          className="flex items-center space-x-2 p-2 min-h-[60px]"
-                        >
-                          <skill.icon color={iconColor} />
-                          <span className="text-sm">{skill.name}</span>
-                        </motion.div>
-                      ))}
-                    </AnimatePresence>
-                  </div>
-                </motion.div>
-              ))}
-            </AnimatePresence>
-          )}
-        </div>
-
-        {/* Icon cloud */}
-        <motion.div className="absolute left-125"
+    <>
+      <div className="relative flex flex-col items-center md:block">
+        <motion.div className=" absolute top-[-20vh] left-[5vw] scale-60 sm:scale-60
+          md:absolute md:left-[50%] md:top-[50%] md:-translate-y-1/2 md:scale-100"
           animate={controls}
         >
           <IconCloud icons={memoizedIcons} />
         </motion.div>
-      </div >
-    </div >
+
+        <div className="mt-[calc(20px+20vh)] md:mt-24">
+          <div className="space-y-3">
+            <div className="w-min">
+              <HeaderFlip className="text-2xl md:text-4xl lg:text-5xl text-primary dark:text-primary">
+                Skills
+              </HeaderFlip>
+            </div>
+          </div>
+
+          <div className=" md:w-[50%] relative md:mr-auto">
+            {/* search input */}
+            <div className="relative lg:w-full py-1 text-xs lg:text-base mb-4 border-b-2 border-b-primary/50">
+              <Search className="absolute top-1/2 transform -translate-y-1/2 left-2" size={20} />
+              <input
+                type="text"
+                placeholder="Search for technologies..."
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                className="searchInput w-full"
+              />
+            </div>
+
+            <div className="scroll-container overflow-y-auto h-[calc(100dvh-280px)] text-sm lg:text-base">
+              {filteredSkills.length === 0 ? (
+                <motion.div className="h-[100%] flex flex-col"
+                  variants={funMessage}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                >
+                  <p>I have not worked with that before.</p>
+                  <h3 className="lg:text-xl lg:my-auto font-bold">But I am a fast learner!</h3>
+                </motion.div>
+
+              ) : (
+                <AnimatePresence>
+                  {groupedSkills.map(([category, skills]) => (
+                    <motion.div
+                      key={category}
+                      variants={slideOutExit}
+                      initial="hidden"
+                      animate="visible"
+                      exit="exit"
+                      layout="position"
+                      className="border rounded-lg overflow-hidden mb-4"
+                    >
+                      <h2 className="p-2 dark:bg-neutral-700/40 bg-neutral-300/50">{category}</h2>
+                      <div className="grid grid-cols-3 p-2 gap-2">
+                        <AnimatePresence>
+                          {skills.map(skill => (
+                            <motion.div
+                              key={skill.id}
+                              variants={skillItem}
+                              initial="hidden"
+                              animate="visible"
+                              exit="exit"
+                              className="flex items-center space-x-2 p-1 lg:p-2 min-h-[30px] lg:min-h-[60px]"
+                            >
+                              <skill.icon color={iconColor} />
+                              <span className="text-sm">{skill.name}</span>
+                            </motion.div>
+                          ))}
+                        </AnimatePresence>
+                      </div>
+                    </motion.div>
+                  ))}
+                </AnimatePresence>
+              )}
+            </div>
+
+          </div >
+
+        </div>
+
+      </div>
+
+    </>
   );
 };
 
