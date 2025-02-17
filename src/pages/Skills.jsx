@@ -6,8 +6,6 @@ import { IconCloud } from "@/components/magicui/icon-cloud";
 import skillsList from "@/data/skillsList";
 import { motion, AnimatePresence, useAnimationControls } from "framer-motion"
 import { skillItem, slideOutExit } from "@/animations/motionVariants";
-import { useCallback } from "react";
-import { debounce } from "lodash"
 
 const useDebounce = (value, delay) => {
   const [debouncedValue, setDebouncedValue] = useState(value);
