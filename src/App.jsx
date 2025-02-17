@@ -19,9 +19,9 @@ import { AnimatePresence } from "framer-motion";
 import LoadingScreen from "./pages/LoadingScreen";
 
 const App = () => {
-  const [isDarkMode, setIsDarkMode] = useState(
-    localStorage.getItem("theme") === "dark"
-  );
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    return localStorage.getItem("theme") !== "light"
+  });
 
   const location = useLocation()
   const navigationType = useNavigationType();
@@ -36,11 +36,9 @@ const App = () => {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setIsDarkMode(true);
+    if (savedTheme === "dark" || !savedTheme) {
       document.documentElement.classList.add("dark");
     } else {
-      setIsDarkMode(false);
       document.documentElement.classList.remove("dark");
     }
   }, []);
@@ -53,6 +51,7 @@ const App = () => {
     const newTheme = isDarkMode ? "light" : "dark";
     localStorage.setItem("theme", newTheme);
     setIsDarkMode(prev => !prev);
+    document.documentElement.classList.toggle("dark", newTheme === "dark");
   }
 
   return (
