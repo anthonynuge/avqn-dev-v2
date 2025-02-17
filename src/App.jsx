@@ -25,7 +25,6 @@ const App = () => {
 
   const location = useLocation()
   const navigationType = useNavigationType();
-
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -36,20 +35,25 @@ const App = () => {
   }, [location]);
 
   useEffect(() => {
-    const html = document.documentElement;
-    html.classList.add("theme-transition");
-    setTimeout(() => {
-      html.classList.remove("theme-transition");
-      html.classList.toggle("dark", isDarkMode);
-    }, 300);
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      setIsDarkMode(true);
+      document.documentElement.classList.add("dark");
+    } else {
+      setIsDarkMode(false);
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", isDarkMode);
   }, [isDarkMode]);
 
   const toggleTheme = () => {
     const newTheme = isDarkMode ? "light" : "dark";
-    setTimeout(() => setIsDarkMode(!isDarkMode), 200);
-    // setIsDarkMode(!isDarkMode);
     localStorage.setItem("theme", newTheme);
-  };
+    setIsDarkMode(prev => !prev);
+  }
 
   return (
     <div className="overflow-x-hidden antialiased relative transition-colors duration-500 ">
