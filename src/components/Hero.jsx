@@ -10,12 +10,11 @@ const Hero = () => {
         </HeaderFlip>
         <h3 className="text-lg lg:text-xl">Full Stack Developer</h3>
       </div>
-      <p className="text-sm lg:text-md lg:w-[75%] ">
-        I like to build cool stuff that not only looks good but runs good I’m a
-        full-stack developer who loves solving problems and creating efficient,
-        impactful solutions. Whether it’s designing intuitive UIs, building
-        integrations, or tackling algorithms, I thrive on challenges and
-        learning.
+      <p className="text-xs md:text-sm lg:text-md lg:w-[68%] ">
+        Hi I am Anthony, a developer specializing in web developement.
+        I like to craft digital experiances for the web,
+        bringing pixels to life, one design at a time.
+        Currently based in Houston, Texas.
       </p>
       <div className="">
         <Socials />
