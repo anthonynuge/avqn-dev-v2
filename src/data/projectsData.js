@@ -52,7 +52,7 @@ export const projects = [
     featured: false,
     when: "Feb 2025 - aprox 2 weeks",
     summary:
-    "You're looking at it right now! This site is a collection of my projects and accomplishments so far in my coding journey. I'm not a UI/UX expert or a designer, but I’ve built this with things I find cool, in a way that I think looks cool. As I grow as a developer, this site will keep evolving with me."
+      "You're looking at it right now! This site is a collection of my projects and accomplishments so far in my coding journey. I'm not a UI/UX expert or a designer, but I’ve built this with things I find cool, in a way that I think looks cool. As I grow as a developer, this site will keep evolving with me."
 
   },
   {
@@ -69,13 +69,15 @@ export const projects = [
       tools: ["Jupyter Notebook", "VS Code", "GitHub"],
     },
     scopes: [
-      "Proposal & Budgeting",
-      "Data processing & NLP",
-      "Trend Analyis & Visulaization",
+      "Image Classification",
+      "Data Augmentation & Processing",
+      "GUI w/ Batch Processing",
       "Model Training & Evaluation",
     ],
     git: "https://github.com/anthonynuge/Fruit-Identification-CNN",
     featured: true,
+    when: "Nov 2024 - Dec 2024",
+    summary: "Commissioned project using python and machine learning. The client wanted a standalone app where they could input images of fruits and have the model classify what type it is with confidence reports. Each image is vectorized into numerical data and a convulational neural net was then applied to learn patterns and make predictions. Although Fruit Vision was made to classify fruit the model can be trained to classify any image if loaded with enough training data."
   },
 
   {
@@ -122,7 +124,7 @@ export const projects = [
         "HTML, CSS",
         "Recharts",
       ],
-      backEnd: ["Node.js", "Express","PostgreSQL"],
+      backEnd: ["Node.js", "Express", "PostgreSQL"],
       tools: ["VS Code", "GitHub", "Postman"],
     },
     scopes: [
@@ -149,21 +151,22 @@ export const projects = [
         "TailwindCSS",
         "HTML, CSS"
       ],
-      backEnd: ["Node.js", "Express","PostgreSQL"],
+      backEnd: ["Node.js", "Express", "PostgreSQL"],
       tools: ["VS Code", "GitHub", "Postman"],
     },
     git: "https://github.com/anthonynuge/susan-ai",
     featured: false,
+    summary: "I built this e-commerce dashboard to make managing an online store smoother and more intuitive. Instead of juggling spreadsheets and scattered data, this dashboard brings sales, inventory, and customer insights into one place. It features real-time analytics, order tracking, and dynamic visualizations to help store owners make better decisions."
   },
-  {
-    id: "weatherApp",
-    title: "Weather App",
-    description: "A weather application using OpenWeatherMap API.",
-    image: "/images/weather.png",
-    gif: "/gifs/fruit.webp",
-    link: "https://weatherapp.com",
-    tags: ["WebRTC", "Phaser", "Astro", "TypeScript"],
-    git: "",
-    featured: false,
-  },
+  // {
+  //   id: "weatherApp",
+  //   title: "Weather App",
+  //   description: "A weather application using OpenWeatherMap API.",
+  //   image: "/images/weather.png",
+  //   gif: "/gifs/fruit.webp",
+  //   link: "https://weatherapp.com",
+  //   tags: ["WebRTC", "Phaser", "Astro", "TypeScript"],
+  //   git: "",
+  //   featured: false,
+  // },
 ];
