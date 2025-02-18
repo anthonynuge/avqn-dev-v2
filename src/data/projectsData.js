@@ -27,7 +27,7 @@ export const projects = [
     description:
       "Yes your in it right now. Site showcasing my work and skills.",
     image: "/covers/maze.webp",
-    gif: "/gifs/portfolio.webp",
+    gif: "/demos/portfoliov2.mp4",
     link: "",
     tags: {
       frontEnd: [
