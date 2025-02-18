@@ -1,8 +1,8 @@
 export const projects = [
   {
-    id: "mazeSolver",
-    title: "Maze Solver",
-    description: "Built in Java, this maze solver app was created to help vizualize different pathfining algorithms",
+    id: "susanAi",
+    title: "Susan AI",
+    description: "Your new AI companion utilizing gemini. Sign up to make calls.",
     image: "/covers/maze.webp",
     gif: "/demos/spedMaze.mp4",
     link: "",
@@ -16,11 +16,12 @@ export const projects = [
       "Algorithm Visualization",
       "Interactive UI",
     ],
-    git: "https://github.com/anthonynuge/pathfinding_visualization",
+    git: "https://github.com/anthonynuge/susan-ai",
     featured: false,
     summary:
       "I built Maze Solver during winter break after studying DSA to better visualize how different pathfinding algorithms traverse a grid. Got tired of constantly drawing mazes so I implemented a maze generator. Built entirely in Java, with Swing for the frontend, this project deepened my understanding of algorithmic problem-solving while creating an interactive learning tool.",
   },
+
   {
     id: "portfolioWebsite",
     title: "Portfolio Website",
@@ -78,6 +79,28 @@ export const projects = [
     featured: true,
     when: "Nov 2024 - Dec 2024",
     summary: "Commissioned project using python and machine learning. The client wanted a standalone app where they could input images of fruits and have the model classify what type it is with confidence reports. Each image is vectorized into numerical data and a convulational neural net was then applied to learn patterns and make predictions. Although Fruit Vision was made to classify fruit the model can be trained to classify any image if loaded with enough training data."
+  },
+  {
+    id: "mazeSolver",
+    title: "Maze Solver",
+    description: "Built in Java, this maze solver app was created to help vizualize different pathfining algorithms",
+    image: "/covers/maze.webp",
+    gif: "/demos/spedMaze.mp4",
+    link: "",
+    tags: {
+      frontEnd: ["Java Swing", "JavaFX", "Java AWT"],
+      backEnd: ["Java"],
+      tools: ["IntelliJ IDEA", "Maven", "GitHub"],
+    },
+    scopes: [
+      "GUI Application",
+      "Algorithm Visualization",
+      "Interactive UI",
+    ],
+    git: "https://github.com/anthonynuge/pathfinding_visualization",
+    featured: false,
+    summary:
+      "I built Maze Solver during winter break after studying DSA to better visualize how different pathfinding algorithms traverse a grid. Got tired of constantly drawing mazes so I implemented a maze generator. Built entirely in Java, with Swing for the frontend, this project deepened my understanding of algorithmic problem-solving while creating an interactive learning tool.",
   },
 
   {
@@ -137,27 +160,27 @@ export const projects = [
     featured: false,
     summary: "I built this e-commerce dashboard to make managing an online store smoother and more intuitive. Instead of juggling spreadsheets and scattered data, this dashboard brings sales, inventory, and customer insights into one place. It features real-time analytics, order tracking, and dynamic visualizations to help store owners make better decisions."
   },
-  {
-    id: "susanAI",
-    title: "Susan AI",
-    description:
-      "Your new AI companion utilizing gemini. Sign up to make calls.",
-    image: "/images/ecommerce.png",
-    gif: "/demos/inventory30fps.mp4",
-    link: "",
-    tags: {
-      frontEnd: [
-        "React",
-        "TailwindCSS",
-        "HTML, CSS"
-      ],
-      backEnd: ["Node.js", "Express", "PostgreSQL"],
-      tools: ["VS Code", "GitHub", "Postman"],
-    },
-    git: "https://github.com/anthonynuge/susan-ai",
-    featured: false,
-    summary: "I built this e-commerce dashboard to make managing an online store smoother and more intuitive. Instead of juggling spreadsheets and scattered data, this dashboard brings sales, inventory, and customer insights into one place. It features real-time analytics, order tracking, and dynamic visualizations to help store owners make better decisions."
-  },
+  // {
+  //   id: "susan",
+  //   title: "Susan AI",
+  //   description:
+  //     "Your new AI companion utilizing gemini. Sign up to make calls."
+  //   image: "/images/ecommerce.png",
+  //   gif: "/demos/inventory30fps.mp4",
+  //   link: "",
+  //   tags: {
+  //     frontEnd: [
+  //       "React",
+  //       "TailwindCSS",
+  //       "HTML, CSS"
+  //     ],
+  //     backEnd: ["Node.js", "Express", "PostgreSQL"],
+  //     tools: ["VS Code", "GitHub", "Postman"],
+  //   },
+  //   git: "https://github.com/anthonynuge/susan-ai",
+  //   featured: false,
+  //   summary: "I built this e-commerce dashboard to make managing an online store smoother and more intuitive. Instead of juggling spreadsheets and scattered data, this dashboard brings sales, inventory, and customer insights into one place. It features real-time analytics, order tracking, and dynamic visualizations to help store owners make better decisions."
+  // },
   // {
   //   id: "weatherApp",
   //   title: "Weather App",
@@ -168,5 +191,6 @@ export const projects = [
   //   tags: ["WebRTC", "Phaser", "Astro", "TypeScript"],
   //   git: "",
   //   featured: false,
-  // },
+  //   },
+  // }
 ];
