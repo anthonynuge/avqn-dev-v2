@@ -13,6 +13,7 @@ const FeaturedProject = () => {
         {featuredProjects.map((project, index) => (
           <ProjectCard
             key={index}
+            id={project.id}
             title={project.title}
             description={project.description}
             link={project.link}

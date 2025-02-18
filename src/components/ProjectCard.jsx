@@ -28,10 +28,10 @@ const ProjectCard = ({
           ></video>
         </div>
         {/* description portion */}
-        <div className="flex py-4 px-4 bg-neutral-100 dark:bg-card-bg border-t-1 border-neutral-800/60 dark:border-neutral-200/10">
-          <div className="w-[80%]">
-            <h4 className="font-semibold">{title}</h4>
-            <p className="text-sm">{description}</p>
+        <div className="flex py-2 px-2 md:py-4 md:px-4 bg-neutral-100 dark:bg-card-bg border-t-1 border-neutral-800/60 dark:border-neutral-200/10">
+          <div className="w-[70%] md:w-[80%]">
+            <h4 className="text-sm md:text-sm font-semibold">{title}</h4>
+            <p className="text-xs md:text-sm line-clamp-2">{description}</p>
           </div>
         </div>
       </div>

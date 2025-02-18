@@ -101,20 +101,28 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
     },
   ];
 
+
   return (
+
     <Sidebar>
       <SidebarHeader>
-        <div className="flex items-center h-12 px-2 gap-4">
-          <Avatar className="size-10">
-            <AvatarImage src="https://github.com/anthonynuge.png" />
-            <AvatarFallback>AN</AvatarFallback>
-          </Avatar>
-          <div>
-            <p className="font-semibold text-foreground">Anthony Nguyen</p>
-            <p className="text-xs">Software Engineer</p>
+        <div className="flex items-center h-12 pl-2 justify-between">
+          <div className="flex items-center h-12 gap-4">
+
+            <Avatar className="size-10">
+              <AvatarImage src="https://github.com/anthonynuge.png" />
+              <AvatarFallback>AN</AvatarFallback>
+            </Avatar>
+            <div>
+              <p className="font-semibold text-foreground">Anthony Nguyen</p>
+              <p className="text-xs">Software Engineer</p>
+            </div>
           </div>
+
         </div>
       </SidebarHeader>
+
+
       <SidebarContent>
         {/* Get to know me sections */}
         <SidebarGroup>
