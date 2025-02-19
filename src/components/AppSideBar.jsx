@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import {
   Home,
   BookOpenText,
-  Search,
   BriefcaseBusiness,
   UserRound,
   Hammer,
@@ -70,11 +69,6 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
       title: "Skills",
       url: "skills",
       icon: BookOpenText,
-    },
-    {
-      title: "Search",
-      url: "#",
-      icon: Search,
     },
   ];
 
