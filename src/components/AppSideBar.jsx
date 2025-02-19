@@ -51,9 +51,9 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
       icon: Home,
     },
     {
-      title: "Experiance",
-      url: "experiance",
-      icon: BriefcaseBusiness,
+      title: "Skills",
+      url: "skills",
+      icon: BookOpenText,
     },
     {
       title: "Projects",
@@ -61,14 +61,14 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
       icon: Hammer,
     },
     {
+      title: "Experiance",
+      url: "experiance",
+      icon: BriefcaseBusiness,
+    },
+    {
       title: "About",
       url: "about",
       icon: UserRound,
-    },
-    {
-      title: "Skills",
-      url: "skills",
-      icon: BookOpenText,
     },
   ];
 
