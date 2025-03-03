@@ -25,7 +25,7 @@ const ProjectPage = () => {
       </div>
 
       <div className="flex-1 overflow-y-auto scroll-container mt-4 relative pl-1">
-        <div className="flex flex-col gap-7">
+        <div className="flex flex-col gap-5">
           <div className="w-full aspect-video">
             <video autoPlay muted loop className="video">
               <source src={project.gif} type="video/mp4" />
