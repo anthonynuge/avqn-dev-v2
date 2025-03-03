@@ -21,11 +21,14 @@ const Experiance = () => {
         </div>
         {/* content */}
         <div className="mt-4">
-          <h2 className="text-lg md:text-lg font-bold">{experiances[0].company}</h2>
-          <p className="text-sm dark:text-neutral-200">{experiances[0].summary}</p>
-          <ul className="text-sm md:text-base list-disc pl-5">
+          <div className="flex flex-col sm:flex-row justify-between gap-0 sm:gap-1 sm:items-center">
+            <h3 className="text-lg item">{experiances[0].company} <span className="text-xs">- {experiances[0].role}</span></h3>
+            <p className="text-xs dark:text-white">{experiances[0].start} - {experiances[0].end}</p>
+          </div>
+          <p className="text-sm mb-4">{experiances[0].summary}</p>
+          <ul className="text-sm list-disc pl-5 mt-1">
             {experiances[0].points.map((point, index) => (
-              <li key={index} className="mb-2">{point}</li>
+              <li key={index} className="mb-1">{point}</li>
             ))}
           </ul>
         </div>

@@ -48,15 +48,14 @@ const About = () => {
         <div className="bg-gray col-span-1 md:col-span-2">
           <h3>Interests</h3>
           <div>
-            <p className="text-sm mb-2">I’ve always been drawn to the idea of building and improving—breaking things down, figuring out how they work, and making them better. That curiosity is what led me into tech.</p>
+            <p className="text-sm mb-2">I have always been drawn to the concept of building and improving things—breaking them down, understanding how they work, and finding ways to make them better. This curiosity led me to pursue a career in software engineering, where I can create something from scratch or deconstruct and enhance existing systems. </p>
             <p className="text-sm mb-2">
-              I’m a minimalist—I value simplicity, efficiency, and high-quality functionality. I believe that the best designs are intentional, where everything serves a purpose.
+              I value simplicity, efficiency, and quality in everything I do. Whether in softwares or in my life, I focus on using the best tools and resources while eliminating unnecessary complexity. I believe great design is intentional—where every element serves a purpose. In my projects, I ensure that each component is streamlined and functional, creating solutions that are both high-performing and user-friendly.
             </p>
             <p className="text-sm">
-              Outide of coding my hobbies include reading on my kindle, bingeing a good netflix series, and cooking.
+              Outside of coding, I enjoy relaxing with a good book, cooking, binge-watching a television series, or exploring and testing out new PC games.
             </p>
           </div>
-
         </div>
 
         <div className="">
