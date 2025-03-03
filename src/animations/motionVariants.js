@@ -33,14 +33,13 @@ export const slideOutExit = {
 }
 
 export const funMessage = {
-  hidden: { opacity: 0, y: 500 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeIn" } },
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 1, ease: "easeIn" } },
   exit: {
     opacity: 0,
-    x: -100,
     transition: {
       duration: 1,
-      ease: "easeIn"
+      ease: "easeInOut"
     }
   }
 }

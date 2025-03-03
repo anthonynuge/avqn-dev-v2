@@ -77,7 +77,7 @@ const Skills = () => {
         delay: 0.5
       }
     });
-  }, [debouncedQuery]);
+  }, [debouncedQuery, controls]);
 
   return (
     <>
