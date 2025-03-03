@@ -89,7 +89,7 @@ const Skills = () => {
           <IconCloud icons={memoizedIcons} />
         </motion.div>
 
-        <div className="mt-[calc(20px+20vh)] md:mt-24">
+        <div className="mt-[calc(20px+20vh)] md:mt-16">
           <div className="space-y-3">
             <div className="w-min">
               <HeaderFlip className="text-2xl md:text-4xl lg:text-5xl text-primary dark:text-primary">
