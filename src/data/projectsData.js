@@ -1,25 +1,35 @@
 export const projects = [
   {
     id: "susanAi",
-    title: "Susan AI",
+    title: "Susan-AI",
     description: "Your new AI companion utilizing gemini. Sign up to make calls.",
-    image: "/covers/maze.webp",
-    gif: "/demos/spedMaze.mp4",
-    link: "",
+    image: "",
+    gif: "/demos/susanAI.mp4",
+    link: "https://susan-ai-one.vercel.app/",
     tags: {
-      frontEnd: ["Java Swing", "JavaFX", "Java AWT"],
-      backEnd: ["Java"],
-      tools: ["IntelliJ IDEA", "Maven", "GitHub"],
+      frontEnd: [
+        "React",
+        "Vite",
+        "TypeScript",
+        "HTML, CSS",
+        "Tailwind",
+        "Framer Motion",
+      ],
+      backEnd: ["Apprwrite (Auth, Database)", "Node.js", "Gemini API"],
+      tools: ["Vercel", "GitHub", "VS Code"],
     },
     scopes: [
-      "GUI Application",
-      "Algorithm Visualization",
-      "Interactive UI",
+      "AI-Powered Chat",
+      "User Authentication",
+      "Code Generation",
+      "Syntax Higlighting",
+      "Gemini Integration",
+      "Responsive Design"
     ],
     git: "https://github.com/anthonynuge/susan-ai",
-    featured: false,
-    summary:
-      "I built Maze Solver during winter break after studying DSA to better visualize how different pathfinding algorithms traverse a grid. Got tired of constantly drawing mazes so I implemented a maze generator. Built entirely in Java, with Swing for the frontend, this project deepened my understanding of algorithmic problem-solving while creating an interactive learning tool.",
+    when: "Feb 2025 - aprox 3 weeks",
+    featured: true,
+    summary: "ChatGPT-inspired assistant powered by Gemini Flash 2.0. I built it as an AI alternative for times when I ran out of free ChatGPT calls—and because I wanted to create something AI-driven myself. Users can sign up, create an account, and chat, ask questions, or even generate code. Responses are rendered in markdown with built-in syntax highlighting for a clean, readable experience."
   },
 
   {
@@ -27,16 +37,15 @@ export const projects = [
     title: "Portfolio Website",
     description:
       "Yes your in it right now. Site showcasing my work and skills.",
-    image: "/covers/maze.webp",
+    image: "",
     gif: "/demos/portfoliov2.mp4",
-    link: "",
+    link: "https://www.avqn.dev/",
     tags: {
       frontEnd: [
         "React",
         "Vite",
         "JavaScript",
-        "CSS",
-        "HTML",
+        "HTML, CSS",
         "Tailwind",
         "Framer Motion",
       ],
@@ -54,7 +63,6 @@ export const projects = [
     when: "Feb 2025 - aprox 2 weeks",
     summary:
       "You're looking at it right now! This site is a collection of my projects and accomplishments so far in my coding journey. I'm not a UI/UX expert or a designer, but I’ve built this with things I find cool, in a way that I think looks cool. As I grow as a developer, this site will keep evolving with me."
-
   },
   {
     id: "fruitVision",
@@ -110,7 +118,7 @@ export const projects = [
       "LLM trained to analyze text and determine whether it is fake or real news.",
     image: "/images/portfolio.png", // Replace with the correct image path
     gif: "/demos/fakeNewsDemo.mp4",
-    link: "jdksafj",
+    link: "",
     tags: {
       frontEnd: ["Tkinter", "Matplotlib", "Seaborn"],
       backEnd: ["Python", "Scikit-Learn", "Numpy"],
@@ -160,37 +168,4 @@ export const projects = [
     featured: false,
     summary: "I built this e-commerce dashboard to make managing an online store smoother and more intuitive. Instead of juggling spreadsheets and scattered data, this dashboard brings sales, inventory, and customer insights into one place. It features real-time analytics, order tracking, and dynamic visualizations to help store owners make better decisions."
   },
-  // {
-  //   id: "susan",
-  //   title: "Susan AI",
-  //   description:
-  //     "Your new AI companion utilizing gemini. Sign up to make calls."
-  //   image: "/images/ecommerce.png",
-  //   gif: "/demos/inventory30fps.mp4",
-  //   link: "",
-  //   tags: {
-  //     frontEnd: [
-  //       "React",
-  //       "TailwindCSS",
-  //       "HTML, CSS"
-  //     ],
-  //     backEnd: ["Node.js", "Express", "PostgreSQL"],
-  //     tools: ["VS Code", "GitHub", "Postman"],
-  //   },
-  //   git: "https://github.com/anthonynuge/susan-ai",
-  //   featured: false,
-  //   summary: "I built this e-commerce dashboard to make managing an online store smoother and more intuitive. Instead of juggling spreadsheets and scattered data, this dashboard brings sales, inventory, and customer insights into one place. It features real-time analytics, order tracking, and dynamic visualizations to help store owners make better decisions."
-  // },
-  // {
-  //   id: "weatherApp",
-  //   title: "Weather App",
-  //   description: "A weather application using OpenWeatherMap API.",
-  //   image: "/images/weather.png",
-  //   gif: "/gifs/fruit.webp",
-  //   link: "https://weatherapp.com",
-  //   tags: ["WebRTC", "Phaser", "Astro", "TypeScript"],
-  //   git: "",
-  //   featured: false,
-  //   },
-  // }
 ];
