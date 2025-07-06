@@ -187,7 +187,7 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
       </SidebarContent>
       <SidebarFooter>
         <SidebarMenuButton asChild className="hover:bg-accent-foreground/10">
-          <a href="#">
+          <a href="/resume.pdf" download="Anthony_Nguyen_Resume.pdf">
             <Download />
             <span>Download Resume</span>
           </a>
