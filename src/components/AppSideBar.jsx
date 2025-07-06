@@ -95,14 +95,11 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
     },
   ];
 
-
   return (
-
     <Sidebar>
       <SidebarHeader>
         <div className="flex items-center h-12 pl-2 justify-between">
           <div className="flex items-center h-12 gap-4">
-
             <Avatar className="size-10">
               <AvatarImage src="https://github.com/anthonynuge.png" />
               <AvatarFallback>AN</AvatarFallback>
@@ -112,10 +109,8 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
               <p className="text-xs">Software Engineer</p>
             </div>
           </div>
-
         </div>
       </SidebarHeader>
-
 
       <SidebarContent>
         {/* Get to know me sections */}
@@ -143,14 +138,15 @@ export function AppSidebar({ toggleTheme, isDarkMode }) {
         {/* Setting sections */}
         <SidebarGroup>
           <SidebarGroupLabel>Settings</SidebarGroupLabel>
-          <SidebarMenuItem>
+          <SidebarMenuItem className="list-none">
             <SidebarMenuButton
               onClick={handleThemeToggle}
               className="hover:bg-accent-foreground/10"
             >
               <span
-                className={`transition-transform duration-500 ease-in-out ${rotated ? "rotate-180" : "rotate-0"
-                  }`}
+                className={`transition-transform duration-500 ease-in-out ${
+                  rotated ? "rotate-180" : "rotate-0"
+                }`}
               >
                 {isDarkMode ? (
                   <Sun className="size-[16px]" />
