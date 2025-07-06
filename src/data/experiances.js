@@ -1,7 +1,39 @@
 export const experiances = [
   {
+    company: "Midnite Agency",
+    role: "Frontend Developer && Site Maintainer",
+    description:
+      "Delivered a high-performance marketing website for a creative agency, combining sleek UI, animation, and automation to drive client engagement and showcase their work.",
+    image: "images/MidniteCover.png",
+    link: "https://www.midnite-agency.com", // Update if needed
+    demo: "",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Framer Motion",
+      "Three.js",
+      "Vercel",
+      "SEO",
+      "Email Automation",
+    ],
+    start: "July 2025",
+    end: "Present",
+    points: [
+      "Developed a fully responsive, modern frontend using Next.js and TailwindCSS to reflect Midnite Agency’s brand identity and creative edge.",
+      "Implemented engaging motion design with Framer Motion and custom 3D background interactions using Three.js for an immersive user experience.",
+      "Set up automated email workflows for lead capture and form submissions using transactional email services, streamlining client communications.",
+      "Optimized SEO, performance, and accessibility, achieving high Lighthouse scores and ensuring fast page loads across all devices.",
+      "Deployed to Vercel with custom domain and DNS configuration, managing the full development lifecycle from design handoff to production launch.",
+    ],
+    summary:
+      "Midnite Agency, a Houston-based creative marketing firm, hired me to design and develop a custom site that communicates their service offerings with visual flair and technical polish. I delivered a scalable, performant website with integrated 3D visuals, animated UI, and automated email handling — all built with modern frontend tooling. This project demonstrates my ability to blend design, interactivity, and automation in a production-ready environment.",
+  },
+
+  {
     company: "National Grid X",
-    role: "Freelance Frontend Developer",
+    role: "Frontend Developer && Site Maintainer",
     description:
       "Designed and launched a responsive website for a commercial energy firm, managing everything from frontend development to domain setup and deployment. Continue to maintain and optimize the site post-launch.",
     image: "images/NgxCover.png",
